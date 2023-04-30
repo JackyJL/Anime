@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>ANIME2</title>
+<link rel="stylesheet" href="../Anime2/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Video</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dplayer@1.25.0/dist/DPlayer.min.css">
+	<style>
+		#dplayer {
+			max-width: 960px;
+			height: 620px;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+	
+<body>
+ <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Anime.html"><img src="anime2.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Anime.html">主頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="anime2.png">所有動畫</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">新番時間表</a>
+            </li>
+          </ul>
+          <form style="width:300px" class="input-group" role="search">
+            <input class="form-control me-2" type="search" placeholder="搜尋" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">搜尋</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+	
+<div id="dplayer"></div>
+	<script src="https://cdn.jsdelivr.net/npm/dplayer@1.25.0/dist/DPlayer.min.js"></script>
+	<script>
+		var dp = new DPlayer({
+    container: document.getElementById('dplayer'),
+    screenshot: true,
+    video: {
+        url: '//nazuna.v.anime1.me/1243/4b.mp4',
+        pic: 'Standbyme.jpg',
+        thumbnails: 'Standbyme.jpg'
+    }
+});
+	</script>
+	
+	</body>
+</html>
