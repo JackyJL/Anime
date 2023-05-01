@@ -17,9 +17,22 @@ body {
 
 
 /* general styling */
+.intro {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 33%;
+}
+
+
+.container1 {
+	 position: relative;
+}
 
 .video {
-	background-color:#2E2C2C;
+  width: 80%;
+  float: left;
 }
 
 
