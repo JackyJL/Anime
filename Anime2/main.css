@@ -18,9 +18,8 @@ body {
 
 /* general styling */
 
-.zanpiancms-play-iframe {
-	width: 1280px;
-		height: 720px;
+.video {
+	background-color:#2E2C2C;
 }
 
 
@@ -68,13 +67,16 @@ body {
 .media-element {
   border-radius: 0.25rem;
   overflow: hidden;
+	max-width: 400px;
+	max-height: 267px;
 }
 
 .media-element > img {
-  width: 100%;
-	height: auto;
+	width:100%;
+	display:inline-block;
   aspect-ratio: 16 / 9;
   object-fit: cover;
+	margin:10px;
 }
 
 .next,
