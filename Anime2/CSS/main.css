@@ -17,13 +17,6 @@ body {
 
 
 /* general styling */
-.intro {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 33%;
-}
 
 
 .container1 {
@@ -129,7 +122,7 @@ body {
 }
 
 :where(.next, .previous) > svg {
-  transition: transform 75ms linear;
+  transition: transform 75ms linear ;
   transform: scale(1);
 }
 :where(.next, .previous):hover > svg {
